@@ -33,7 +33,7 @@ object frmMain: TfrmMain
     Top = 0
     Width = 809
     Height = 22
-    ButtonHeight = 20
+    ButtonHeight = 21
     ButtonWidth = 31
     Caption = 'ToolBar1'
     ShowCaptions = True
@@ -79,7 +79,7 @@ object frmMain: TfrmMain
       Left = 239
       Top = 0
       Width = 44
-      Height = 20
+      Height = 21
       Caption = #20572#27490
       TabOrder = 0
     end
@@ -95,7 +95,7 @@ object frmMain: TfrmMain
       Left = 291
       Top = 0
       Width = 52
-      Height = 20
+      Height = 21
       Caption = 'insert'
       Checked = True
       TabOrder = 2
@@ -105,7 +105,7 @@ object frmMain: TfrmMain
       Left = 343
       Top = 0
       Width = 42
-      Height = 20
+      Height = 21
       Caption = 'del'
       TabOrder = 3
     end
@@ -113,7 +113,7 @@ object frmMain: TfrmMain
       Left = 385
       Top = 0
       Width = 52
-      Height = 20
+      Height = 21
       Caption = 'update'
       TabOrder = 4
     end
@@ -129,14 +129,14 @@ object frmMain: TfrmMain
       Left = 445
       Top = 0
       Width = 24
-      Height = 20
+      Height = 21
       Caption = #34920#21517
     end
     object edtTable: TEdit
       Left = 469
       Top = 0
       Width = 124
-      Height = 20
+      Height = 21
       TabOrder = 5
       Text = 'a_cartype_raw'
     end
@@ -149,8 +149,6 @@ object frmMain: TfrmMain
     Align = alClient
     ScrollBars = ssBoth
     TabOrder = 1
-    ExplicitTop = 22
-    ExplicitHeight = 255
   end
   object Panel1: TPanel
     Left = 0
@@ -203,7 +201,7 @@ object frmMain: TfrmMain
     Top = 22
     Width = 809
     Height = 22
-    ButtonHeight = 18
+    ButtonHeight = 21
     Caption = 'ToolBar2'
     TabOrder = 4
     object ToolButton4: TToolButton
@@ -217,14 +215,14 @@ object frmMain: TfrmMain
       Left = 8
       Top = 0
       Width = 30
-      Height = 18
+      Height = 21
       Caption = 'where'
     end
     object edtWhereCols: TEdit
       Left = 38
       Top = 0
       Width = 137
-      Height = 18
+      Height = 21
       TabOrder = 1
     end
     object ToolButton5: TToolButton
@@ -239,14 +237,14 @@ object frmMain: TfrmMain
       Left = 183
       Top = 0
       Width = 30
-      Height = 18
+      Height = 21
       Caption = 'delete'
     end
     object edtRmFilds: TEdit
       Left = 213
       Top = 0
       Width = 123
-      Height = 18
+      Height = 21
       TabOrder = 0
     end
   end

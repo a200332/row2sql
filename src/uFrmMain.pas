@@ -250,7 +250,9 @@ procedure TfrmMain.FormCreate(Sender: TObject);
 begin
   FLogStrs := TStringList.Create;
   OpenDialog1.InitialDir := self.getAppFileName('');
-  cbxURL.Items.LoadFromFile(getAppFileName('lastfile.txt'), TEncoding.UTF8);
+  if FileExists(getAppFileName('lastfile.txt')) then begin
+    cbxURL.Items.LoadFromFile(getAppFileName('lastfile.txt'), TEncoding.UTF8);
+  end;
 end;
 
 procedure TfrmMain.FormDestroy(Sender: TObject);
