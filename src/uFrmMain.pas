@@ -78,7 +78,7 @@ var
 
 implementation
 
-uses StrUtils, uPaserUtils;
+uses StrUtils, uSqlUtils;
 
 {$R *.dfm}
 
@@ -166,15 +166,15 @@ begin
   memoRst.lines.beginUpdate;
   try
     if rbInsert.Checked then begin
-      TPaserUtils.getInsertSqlOfStrs(memoCtx.Lines, edtTable.Text,
+      TSQLUtils.getInsertSqlOfStrs(memoCtx.Lines, edtTable.Text,
         memoRst.Lines, doStopSql);
     end else if rbUpdate.Checked then begin
       s := edtTable.Text;
       if s.StartsWith('a_cartype') then begin
-        TPaserUtils.getUpdateSqlOfStrs(memoCtx.Lines, edtTable.Text, 'rawid',
+        TSQLUtils.getUpdateSqlOfStrs(memoCtx.Lines, edtTable.Text, 'rawid',
           memoRst.Lines, 'carTypeId', doStopSql);
       end else begin
-        TPaserUtils.getUpdateSqlOfStrs(memoCtx.Lines, edtTable.Text,
+        TSQLUtils.getUpdateSqlOfStrs(memoCtx.Lines, edtTable.Text,
           edtWhereCols.Text, memoRst.Lines, edtRmFilds.Text, doStopSql);
       end;
     end;
